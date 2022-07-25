@@ -1,0 +1,70 @@
+package MarkerIntrface;
+
+public class MarkerInterface {
+
+	public static void main(String[] args) {
+		Viewer Rumpu = new Viewer();
+		
+     if(Rumpu instanceof Ticket) {
+    	Rumpu.seemovie();
+     }else {
+    	 Rumpu.cantSeeMovie();
+     }
+     
+	}
+
+}
+________________________________________________________________
+
+package MarkerIntrface;
+
+public interface Ticket {
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
+___________________________________________________________
+package MarkerIntrface;
+
+public class Viewer implements Ticket {
+ //Above one is the example of Marker Interface,
+ //Marker Interface= It contains no abstract method
+	void seemovie() {
+		System.out.println("Viewers are watching movie");
+	}
+	
+	void cantSeeMovie() {
+	System.out.println(" Views can't able to see movie");
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
